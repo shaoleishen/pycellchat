@@ -1,0 +1,17 @@
+[package]
+name = "pycellchat-py"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "PyO3 bindings for pycellchat"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pycellchat-core = { path = "../pycellchat-core" }
+pyo3 = { workspace = true }
+numpy = { workspace = true }
+ndarray = { workspace = true }
+sprs = { workspace = true }

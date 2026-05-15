@@ -1,0 +1,17 @@
+[package]
+name = "pycellchat-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core computation engine for pycellchat (Rust)"
+
+[dependencies]
+ndarray = { workspace = true }
+sprs = { workspace = true }
+petgraph = { workspace = true }
+rayon = { workspace = true }
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+
+[dev-dependencies]
+approx = "0.5"
